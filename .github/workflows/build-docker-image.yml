@@ -22,7 +22,7 @@ jobs:
 
     # Setup for buildx
     - name: Set up QEMU
-      uses: docker/setup-qemu-action@v1
+      uses: docker/setup-qemu-action@v3
       with: 
         image: tonistiigi/binfmt:qemu-v6.0.0-12
     - name: Set up Docker Buildx
