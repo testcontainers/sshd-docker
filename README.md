@@ -29,8 +29,8 @@ services:
 And connect to it via ssh:
 
 ```bash
-# ssh -R [remote_port]:[destination_address]:[local_port] [username]@[ssh_server]
-ssh -R 8080:localhost:8080 root@localhost:10022
+# ssh -R [remote_port]:[destination_address]:[local_port] [username]@[ssh_server] -p [ssh_port]
+ssh -R 8080:localhost:8080 root@localhost -p 10022
 ```
 
 Start your application and you should see requests coming from the requester service:
