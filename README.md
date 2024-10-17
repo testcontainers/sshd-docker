@@ -7,6 +7,7 @@ When using testcontainers in unit tests, refer to the documentation of testconta
 - Java: https://java.testcontainers.org/features/networking/#exposing-host-ports-to-the-container
 - .NET: https://dotnet.testcontainers.org/api/create_docker_network/#exposing-host-ports-to-the-container
 - node.js: https://node.testcontainers.org/features/networking/#expose-host-ports-to-container
+- Go: https://golang.testcontainers.org/features/networking/#exposing-host-ports-to-the-container
 
 Alternatively, you can start the container yourself:
 ```yaml
