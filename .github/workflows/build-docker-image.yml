@@ -62,6 +62,7 @@ jobs:
         # Only push if we are publishing a release
         push: ${{ github.event_name == 'release' && github.event.action == 'published' }}
         # Use a 'temp' tag, that won't be pushed, for non-release builds
+        # TODO reenable push to dockerhub once issue is resolved: https://github.com/testcontainers/sshd-docker/issues/21
+        # ${{ env.IMAGE_REPOSITORY }}:${{ github.event.release.tag_name || 'temp' }}
         tags: |
-          ${{ env.IMAGE_REPOSITORY }}:${{ github.event.release.tag_name || 'temp' }}
           ghcr.io/${{ env.IMAGE_REPOSITORY }}:${{ github.event.release.tag_name || 'temp' }}
