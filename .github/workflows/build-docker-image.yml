@@ -1,9 +1,5 @@
 name: Build multi-arch Docker Image
 
-permissions:
-  contents: read
-  packages: write
-
 on:
   release:
     types: [published]
